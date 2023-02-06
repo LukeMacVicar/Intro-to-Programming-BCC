@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<style>
+		td {
+    color: green;
+    border: solid thin;
+}
+	</style>
+</head>
+<script type="text/javascript">
+var book_one = 0;
+var book_two = 0;
+var book_three = 0;
+var average_cost = 0;
+
+book_one = prompt("How much did the first book cost?",0);
+book_two = prompt("How much did the second book cost",0);
+book_three = prompt("How much did the third book cost?",0);
+average_cost = (parseFloat(book_one) + parseFloat(book_two) + parseFloat(book_three)) / 3;
+
+if (average_cost > 100) {
+    document.write("The average cost of the three books was: ", average_cost, "<br> The books were too expensive.");
+} 
+else {
+    document.write("The average cost of the three books was: ", average_cost, "<br> Okay");
+}
+
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<style>
+		td {
+    color: green;
+    border: solid thin;
+}
+	</style>
+</head>
+<script type="text/javascript">
+var hours_monday = 0;
+var hours_tuesday = 0;
+var hours_wednesday = 0;
+var hours_thursday = 0;
+var hours_friday = 0;
+var total_hours = 0;
+var average_hours = 0;
+hours_monday = prompt("How many hours did you work on Monday?",0);
+hours_tuesday = prompt("How many hours did you work on Tuesday?",0);
+hours_wednesday = prompt("How many hours did you work on Wednesday?",0);
+hours_thursday = prompt("How many hours did you work on Thursday?",0);
+hours_friday = prompt("How many hours did you work on Friday?",0);
+total_hours = parseFloat(hours_monday) + parseFloat(hours_tuesday) + parseFloat(hours_wednesday) + parseFloat(hours_thursday) + parseFloat(hours_friday);
+average_hours = (parseFloat(total_hours) / 5);
+document.write("You worked a total of ", total_hours, " hours. <br>", "You worked for an average of ", average_hours, " hours each day.");
+</script>
+</html>

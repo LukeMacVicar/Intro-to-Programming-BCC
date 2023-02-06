@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<style>
+		td {
+    color: green;
+    border: solid thin;
+}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+var pay_per_hour = 0;
+var desired_income = 0; 
+var hours_for_desired = 0;
+pay_per_hour = prompt("Enter your pay per hour",0);
+desired_income = prompt("Enter your desired income for the week",0);
+hours_for_desired = desired_income / pay_per_hour;
+document.write("You need to work ",hours_for_desired, " hours each week, to reach your desired income.");
+</script>
+</body>
+</html>
